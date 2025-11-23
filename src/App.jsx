@@ -10,8 +10,6 @@ import AppProtectedRoutes from "./Components/ProtectedRoutes/AppProtectedRoutes.
 import AuthProtectedRoutes from "./Components/ProtectedRoutes/AuthProtectedRoutes.jsx";
 import PostDetails from "./Pages/PostDetails/PostDetails.jsx";
 import Mainlayout from "./Layout/MainLayout/MainLayout.jsx";
-
-
 function App() {
   const router = createBrowserRouter([
     {
@@ -68,7 +66,6 @@ function App() {
           path: "register",
           element: (
             <AuthProtectedRoutes>
-              {" "}
               <Register />
             </AuthProtectedRoutes>
           ),
