@@ -1,6 +1,6 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import Authlayout from "./Layout/Authlayout/Authlayout.jsx";
+import Authlayout from "./Layout/AuthLayout/AuthLayout.jsx";
 import NewsFeed from "./Pages/NewsFeed/NewsFeed.jsx";
 import Notfound from "./Pages/Notfound/Notfound.jsx";
 import Register from "./Pages/Auth/Register/Register.jsx";
