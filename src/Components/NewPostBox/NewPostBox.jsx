@@ -12,9 +12,9 @@ import { BsCameraVideoFill } from "react-icons/bs";
 import { IoMdPhotos } from "react-icons/io";
 import { IoLogoYoutube } from "react-icons/io";
 import { MdEmojiEmotions } from "react-icons/md";
-import CreatePostModal from "./CreatePostModal";
+import CreatePostModal from "./CreatePostModal.jsx";
 import { useContext } from "react";
-import { userContext } from "./../Context/UserContext";
+import { userContext } from "./../Context/UserContext.jsx";
 
 const myIcons = [
   {

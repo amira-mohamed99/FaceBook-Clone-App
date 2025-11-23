@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaUser, FaBirthdayCake } from "react-icons/fa";
 import { useContext } from "react";
 import ChangePassModal from "./ChangePassModal";
-import { userContext } from "../../Components/Context/UserContext";
+import { userContext } from "../../Components/Context/UserContext.jsx";
 
 export default function AboutUser() {
   const { userData ,setToken } = useContext(userContext);

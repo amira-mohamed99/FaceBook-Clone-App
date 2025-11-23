@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { IoChevronDown } from "react-icons/io5";
-import Comment from "./../Comment/Comment";
+import Comment from "./../Comment/Comment.jsx";
 import { useState } from 'react';
-import CommentInput from "../Comment/commentInput";
+import CommentInput from "../Comment/CommentInput.jsx";
 
 export default function PostFooter({
   postComments,

@@ -1,8 +1,8 @@
-import NewPostBox from "../../Components/NewPostBox/NewPostBox";
-import Post from "../../Components/Post/Post";
-import { getAllPosts } from "../../Services/postServices";
-import PostSkeleton from "../../Components/Skeletons/PostSkeleton";
-import { deletePost } from "../../Services/postServices";
+import NewPostBox from "../../Components/NewPostBox/NewPostBox.jsx";
+import Post from "../../Components/Post/Post.jsx";
+import { getAllPosts } from "../../Services/postServices.js";
+import PostSkeleton from "../../Components/Skeletons/PostSkeleton.jsx";
+import { deletePost } from "../../Services/postServices.js";
 import { toast } from "react-toastify";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Pagination, Skeleton } from "@heroui/react";

@@ -9,7 +9,7 @@ import {
 } from "@heroui/react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { useContext, useState } from "react";
-import { userContext } from "../../Components/Context/UserContext";
+import { userContext } from "../../Components/Context/UserContext.jsx";
 import { toast } from "react-toastify";
 
 export default function ChangePassModal({ isOpen, onOpenChange }) {

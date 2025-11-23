@@ -12,8 +12,8 @@ import {
 } from "@heroui/react";
 import { useContext, useRef, useState } from "react";
 import { IoMdPhotos } from "react-icons/io";
-import { createPost, updatePost } from "../../Services/postServices";
-import { userContext } from "../Context/UserContext";
+import { createPost, updatePost } from "../../Services/postServices.js";
+import { userContext } from "../Context/UserContext.jsx";
 import { useQueryClient } from "@tanstack/react-query";
 
 export default function CreatePostModal({ post, isOpen, onOpenChange }) {

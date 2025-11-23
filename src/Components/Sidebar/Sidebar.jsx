@@ -1,6 +1,5 @@
 import { IoHomeOutline, IoStorefront } from "react-icons/io5";
 import { FaUserFriends, FaBookmark, FaFlag } from "react-icons/fa";
-import { BiSolidHomeHeart } from "react-icons/bi";
 import { MdGroups } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { FaUser } from "react-icons/fa";

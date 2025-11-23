@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
-import { getLoggedUserData } from "../../Services/postServices";
-import { changePassword, uploadPhoto } from "../../Services/userServices";
+import { getLoggedUserData } from "../../Services/postServices.js";
+import { changePassword, uploadPhoto } from "../../Services/userServices.js";
 
 export const userContext = createContext();
 

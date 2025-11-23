@@ -1,15 +1,15 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import Authlayout from "./Layout/Authlayout/Authlayout";
-import NewsFeed from "./Pages/NewsFeed/NewsFeed";
-import Notfound from "./Pages/Notfound/Notfound";
-import Register from "./Pages/Auth/Register/Register";
-import Login from "./Pages/Auth/Login/Login";
-import UserProfile from "./Pages/UserProfile/UserProfile";
-import AppProtectedRoutes from "./Components/ProtectedRoutes/AppProtectedRoutes";
-import AuthProtectedRoutes from "./Components/ProtectedRoutes/AuthProtectedRoutes";
-import PostDetails from "./Pages/PostDetails/PostDetails";
-import Mainlayout from "./Layout/MainLayout/MainLayout";
+import Authlayout from "./Layout/Authlayout/Authlayout.jsx";
+import NewsFeed from "./Pages/NewsFeed/NewsFeed.jsx";
+import Notfound from "./Pages/Notfound/Notfound.jsx";
+import Register from "./Pages/Auth/Register/Register.jsx";
+import Login from "./Pages/Auth/Login/Login.jsx";
+import UserProfile from "./Pages/UserProfile/UserProfile.jsx";
+import AppProtectedRoutes from "./Components/ProtectedRoutes/AppProtectedRoutes.jsx";
+import AuthProtectedRoutes from "./Components/ProtectedRoutes/AuthProtectedRoutes.jsx";
+import PostDetails from "./Pages/PostDetails/PostDetails.jsx";
+import Mainlayout from "./Layout/MainLayout/MainLayout.jsx";
 
 
 function App() {

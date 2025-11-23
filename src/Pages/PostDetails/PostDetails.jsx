@@ -1,13 +1,13 @@
 import { deletePost, getSinglePost } from "../../Services/postServices";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import PostSkeleton from "../../Components/Skeletons/PostSkeleton";
-import PostHeader from "./../../Components/PostCard/PostHeader";
-import PostBody from "./../../Components/PostCard/PostBody";
-import Comment from "./../../Components/Comment/Comment";
-import CommentInput from "../../Components/Comment/commentInput";
+import PostSkeleton from "../../Components/Skeletons/PostSkeleton.jsx";
+import PostHeader from "./../../Components/PostCard/PostHeader.jsx";
+import PostBody from "./../../Components/PostCard/PostBody.jsx";
+import Comment from "./../../Components/Comment/Comment.jsx";
 import { toast } from "react-toastify";
 import { useQuery } from "@tanstack/react-query";
+import CommentInput from "../../Components/Comment/CommentInput.jsx";
 export default function PostDetails() {
   const { id } = useParams();
   const [postComments, setPostComments] = useState([]);

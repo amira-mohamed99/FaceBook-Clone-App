@@ -4,7 +4,7 @@ import {
   createComment,
   getPostComments,
   updateComments,
-} from "../../Services/commentsServises";
+} from "../../Services/commentsServises.js";
 import { BsEmojiSmile } from "react-icons/bs";
 import { Button } from "@heroui/react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";

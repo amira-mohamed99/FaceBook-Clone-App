@@ -1,12 +1,11 @@
 import { useContext } from "react";
 import ProfileHeader from "./ProfileHeader";
-import { userContext } from "../../Components/Context/UserContext";
-import AboutUser from "./AboutUser";
-import NewsFeed from "./../NewsFeed/NewsFeed";
+import { userContext } from "../../Components/Context/UserContext.jsx";
+import AboutUser from "./AboutUser.jsx";
 import { useQuery } from "@tanstack/react-query";
-import PostSkeleton from "../../Components/Skeletons/PostSkeleton";
-import Post from "../../Components/Post/Post";
-import { getAllPosts } from "../../Services/postServices";
+import PostSkeleton from "../../Components/Skeletons/PostSkeleton.jsx";
+import Post from "../../Components/Post/Post.jsx";
+import { getAllPosts } from "../../Services/postServices.js";
 
 function UserProfile() {
   const { isLoading, userData, uploadUserPhoto } = useContext(userContext);

@@ -7,8 +7,8 @@ import {
 } from "@heroui/react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { useContext } from "react";
-import { userContext } from "./../Context/UserContext";
-import CreatePostModal from "./../NewPostBox/CreatePostModal";
+import { userContext } from "./../Context/UserContext.jsx";
+import CreatePostModal from "./../NewPostBox/CreatePostModal.jsx";
 
 export default function PostHeader({
   photo,

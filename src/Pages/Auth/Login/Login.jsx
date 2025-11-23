@@ -1,13 +1,13 @@
 import { Button, Input } from "@heroui/react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { loginSchema } from "../../../Lib/validationSchemas/AuthSchema";
+import { loginSchema } from "../../../Lib/validationSchemas/AuthSchema.js";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { useContext, useState } from "react";
-import { loginUser } from "../../../Services/authServices";
+import { loginUser } from "../../../Services/authServices.js";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
-import { userContext } from "../../../Components/Context/UserContext";
+import { userContext } from "../../../Components/Context/UserContext.jsx";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);

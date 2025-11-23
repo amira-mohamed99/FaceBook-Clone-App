@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { userContext } from "../Context/UserContext";
+import { userContext } from "../Context/UserContext.jsx";
 
 export default function AuthProtectedRoutes({ children }) {
   const { token } = useContext(userContext);

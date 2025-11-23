@@ -1,7 +1,6 @@
-import Footer from "../../Components/Footer/Footer";
-import Navbar from "../../Components/Navbar/Navbar";
+import Navbar from "../../Components/Navbar/Navbar.jsx";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../../Components/Sidebar/Sidebar";
+import Sidebar from "../../Components/Sidebar/Sidebar.jsx";
 
 function Mainlayout() {
   return (

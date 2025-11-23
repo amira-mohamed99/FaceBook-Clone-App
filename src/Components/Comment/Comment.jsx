@@ -4,11 +4,11 @@ import { DropdownMenu } from "@heroui/react";
 import { DropdownItem } from "@heroui/react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { useContext } from "react";
-import { userContext } from "./../Context/UserContext";
+import { userContext } from "./../Context/UserContext.jsx";
 import { useState } from "react";
 import {
   deleteComment,
-} from "../../Services/commentsServises";
+} from "../../Services/commentsServises.js";
 
 export default function Comment({
   postComments,

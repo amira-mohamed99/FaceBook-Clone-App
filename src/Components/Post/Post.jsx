@@ -1,6 +1,6 @@
-import PostHeader from "../PostCard/PostHeader";
-import PostBody from "../PostCard/PostBody";
-import PostFooter from "./../PostCard/PostFooter";
+import PostHeader from "../PostCard/PostHeader.jsx";
+import PostBody from "../PostCard/PostBody.jsx";
+import PostFooter from "./../PostCard/PostFooter.jsx";
 import { useState } from "react";
 
 export default function Post({ post, deleteSinglePost }) {

@@ -14,7 +14,7 @@ import {
 import logo from "../../assets/img/logo.png";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { userContext } from "./../Context/UserContext";
+import { userContext } from "./../Context/UserContext.jsx";
 
 export default function Navbar() {
   const { isLoading, userData ,setToken } = useContext(userContext);

@@ -3,10 +3,10 @@ import { useForm } from "react-hook-form";
 import { Select, SelectItem } from "@heroui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { regSchema } from "../../../Lib/validationSchemas/AuthSchema";
+import { regSchema } from "../../../Lib/validationSchemas/AuthSchema.js";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { useState } from "react";
-import { registerUser } from "../../../Services/authServices";
+import { registerUser } from "../../../Services/authServices.js";
 import { toast } from "react-toastify";
 
 function Register() {
