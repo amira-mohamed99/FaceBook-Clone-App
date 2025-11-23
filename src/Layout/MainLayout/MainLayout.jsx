@@ -16,7 +16,6 @@ function Mainlayout() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
