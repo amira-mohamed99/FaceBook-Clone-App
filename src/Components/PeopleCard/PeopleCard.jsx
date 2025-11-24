@@ -22,7 +22,7 @@ const people = [
 
 export default function PeopleCard() {
   return (
-    <Card className="h-fit p-4 w-2xs mt-2 shadow-lg rounded-2xl border border-purple-100 bg-white/90 backdrop-blur-md hidden md:block">
+    <Card className="h-fit p-4 w-[250px] mt-2 shadow-lg rounded-2xl border border-purple-100 bg-white/90 backdrop-blur-md hidden md:block">
       <div>
         <h2 className="text-purple-600 font-semibold text-lg text-center p-2">
           People you may know

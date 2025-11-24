@@ -61,7 +61,7 @@ export default function CreatePostModal({ post, isOpen, onOpenChange }) {
   return (
     <>
       <Modal
-        size="lg"
+      className="w-full max-w-lg sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto"
         isOpen={isOpen}
         onOpenChange={() => {
           onOpenChange(false);
@@ -140,7 +140,7 @@ export default function CreatePostModal({ post, isOpen, onOpenChange }) {
                   color="secondary"
                   isLoading={isLoading}
                   onPress={editPost}
-                  className="text-lg"
+                  className="text-sm sm:text-base md:text-lg"
                 >
                   {post ? "Update" : "Post"}
                 </Button>

@@ -11,11 +11,15 @@ export const regSchema = z
       .string()
       .nonempty("Email is required")
       .email("Invalid email format"),
-    password: z
+      password: z
       .string()
       .nonempty("Password is required")
-      .min(5, "Password must be atleast 5 characters")
-      .max(10, "Password must be atleast 10 characters"),
+      .min(8, "Password must be at least 8 characters") 
+      .max(20, "Password must be at most 20 characters")
+      .regex(
+        /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/,
+        "Password must contain at least 1 uppercase, 1 lowercase, 1 number, and 1 special character"
+      ),
     rePassword: z.string(),
     dateOfBirth: z.coerce.string().refine(
       (date) => {

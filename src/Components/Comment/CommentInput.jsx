@@ -6,7 +6,7 @@ import {
   updateComments,
 } from "../../Services/commentsServises.js";
 import { BsEmojiSmile } from "react-icons/bs";
-import { Button } from "@heroui/react";
+import { Button, toast } from "@heroui/react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 export default function CommentInput({

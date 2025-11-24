@@ -24,10 +24,10 @@ export default function Navbar() {
     setToken(false);
   }
   return (
-    <HeroNavbar isBordered maxWidth="full" height="50px" className="px-15">
-      <NavbarContent justify="start">
+    <HeroNavbar isBordered maxWidth="full" height="50px" className="px-4 sm:px-8 md:px-15 flex flex-wrap items-center h-16 md:h-14">
+      <NavbarContent justify="start" className="shrink-0">
         <Link to={"/home"}>
-          <NavbarBrand className="mr-4">
+          <NavbarBrand className="mr-4 flex items-center">
             <img src={logo} width={30} alt="nexify logo" />
             <span className="font-bold ms-2 text-xl ">Nexify</span>
           </NavbarBrand>
@@ -36,9 +36,9 @@ export default function Navbar() {
       <NavbarBrand>
         <Input
           classNames={{
-            base: "max-w-xl h-8",
+            base: "max-w-full md:max-w-xl h-8",
             mainWrapper: "h-full",
-            input: "text-small",
+            input: "text-sm",
             inputWrapper:
               "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
           }}
@@ -48,7 +48,7 @@ export default function Navbar() {
           radius="full"
         />
       </NavbarBrand>
-      <NavbarContent as="div" className="items-center" justify="end">
+      <NavbarContent as="div" className="items-center shrink-0" justify="end">
         <Dropdown placement="bottom-end">
           <DropdownTrigger className="cursor-pointer">
             {isLoading ? (
