@@ -41,7 +41,7 @@ function Login() {
 
   return (
     <>
-    <title>Sign In | Social App</title>
+    <title>Sign In | Nexify</title>
       <form
         className="w-full max-w-2xl space-y-4"
         onSubmit={handleSubmit(onSubmit)}

@@ -36,7 +36,7 @@ export default function PostDetails() {
 
   return (
     <>
-      <title>Post Detailes | Social App</title>
+      <title>Post Detailes | Nexify</title>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         <div className="col-span-1 md:col-span-2">
           {isLoading ? (

@@ -18,7 +18,7 @@ function UserProfile() {
 
   return (
     <>
-    <title>Profile | Social App</title>
+    <title>Profile | Nexify</title>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-lg md:max-w-4xl container">
         <div className="order-1 col-span-1 md:col-span-3">
           <ProfileHeader
