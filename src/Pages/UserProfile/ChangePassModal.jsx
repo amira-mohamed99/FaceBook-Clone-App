@@ -46,7 +46,7 @@ export default function ChangePassModal({ isOpen, onOpenChange }) {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex justify-center font-bold text-2xl text-purple-500">
+              <ModalHeader className="flex justify-center font-bold text-xl text-purple-500">
                 Modal Title
               </ModalHeader>
               <ModalBody>
@@ -95,7 +95,6 @@ export default function ChangePassModal({ isOpen, onOpenChange }) {
                 <Button
                   fullWidth
                   color="secondary"
-                  className="text-xl"
                   onPress={makeNewPassword}
                   isLoading={isLoading}
                 >

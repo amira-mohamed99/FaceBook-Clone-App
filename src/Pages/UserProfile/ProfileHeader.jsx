@@ -19,7 +19,7 @@ export default function ProfileHeader({ userData, uploadUserPhoto }) {
     }
     setIsLoading(true);
     try {
-     await uploadUserPhoto(photo);
+      await uploadUserPhoto(photo);
       toast.success("Photo uploaded successfully!");
     } catch (error) {
       console.log(error);
@@ -30,7 +30,7 @@ export default function ProfileHeader({ userData, uploadUserPhoto }) {
   }
   return (
     <>
-      <Card className="p-3 min-w-full h-fit relative overflow-visible">
+      <Card className="p-3 max-w-lg md:max-w-4xl h-fit relative overflow-visible">
         <div className="w-full h-56 overflow-hidden rounded-lg">
           <img
             src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80"
@@ -43,15 +43,17 @@ export default function ProfileHeader({ userData, uploadUserPhoto }) {
           <div className="relative">
             {isLoading ? (
               <Skeleton className="flex rounded-full w-20 h-20" />
-            ): (    <Image
-              alt="Profile Photo"
-              height={100}
-              width={100}
-              radius="full"
-              src={userData.photo}
-              className="border-4 border-white shadow-md"
-            />)}
-        
+            ) : (
+              <Image
+                alt="Profile Photo"
+                height={100}
+                width={100}
+                radius="full"
+                src={userData.photo}
+                className="border-4 border-white shadow-md"
+              />
+            )}
+
             <FaPen
               onClick={openPhotoInptu}
               className="z-10 absolute top-15 text-purple-500 left-0 cursor-pointer hover:border-1 bg-gray-100 rounded-lg text-2xl p-1"
@@ -63,9 +65,9 @@ export default function ProfileHeader({ userData, uploadUserPhoto }) {
             type="file"
             className="hidden"
           />
-        
+
           <div className="m-5 pt-3">
-            <p className="font-bold pb-1 text-2xl">{userData.name}</p>
+            <p className="font-bold pb-1 text-xl">{userData.name}</p>
             <p>Frontend Developer</p>
           </div>
         </CardHeader>

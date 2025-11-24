@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Pagination, Skeleton } from "@heroui/react";
 import { useEffect, useState } from "react";
+import PeopleCard from "../../Components/PeopleCard/PeopleCard.jsx";
 
 function NewsFeed() {
   const queryClient = useQueryClient();
@@ -34,42 +35,46 @@ function NewsFeed() {
     }
   }, [data]);
   useEffect(() => {
-   scrollTo({top:0 , behavior:"smooth"})
+    scrollTo({ top: 0, behavior: "smooth" });
   }, [page]);
   return (
     <>
-    <title>Home | Social App</title>
-      <div>
-        <NewPostBox />
-        {isLoading ? (
-          [...Array(5)].map((skeleton, index) => <PostSkeleton key={index} />)
-        ) : (
-          <>
-            {data?.data.posts &&
-              data?.data.posts.map((post) => (
+      <title>Home | Nexify </title>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 ">
+        <div className="col-span-1 md:col-span-2 mx-auto">
+          <NewPostBox />
+          {isLoading ? (
+            [...Array(5)].map((_, index) => <PostSkeleton key={index} />)
+          ) : (
+            <>
+              {data?.data.posts?.map((post) => (
                 <Post
                   key={post.id}
-                  deleteSinglePost={deleteSinglePost}
                   post={post}
+                  deleteSinglePost={deleteSinglePost}
                 />
               ))}
-          </>
-        )}
-        {initialLoad ? (
-          <Skeleton className="h-3 w-2xl rounded-lg mt-10" />
-        ) : (
-          <div className="pt-5 ml-35">
-            <Pagination
-              onChange={setPage}
-              isCompact
-              showControls
-              initialPage={1}
-              total={data?.data.paginationInfo.numberOfPages || totalePage}
-              color="secondary"
-              showShadow={true}
-            />
-          </div>
-        )}
+            </>
+          )}
+          {initialLoad ? (
+            <Skeleton className="h-3 w-2xl rounded-lg mt-10" />
+          ) : (
+            <div className="pt-5 flex justify-center">
+              <Pagination
+                onChange={setPage}
+                isCompact
+                showControls
+                initialPage={1}
+                total={data?.data.paginationInfo.numberOfPages || totalePage}
+                color="secondary"
+                showShadow={true}
+              />
+            </div>
+          )}
+        </div>
+        <div className="col-span-1 mx-auto">
+          <PeopleCard />
+        </div>
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import { Card, Skeleton } from "@heroui/react";
 
 export default function PostSkeleton() {
   return (
-    <Card className="space-y-5 p-4 mt-5 max-w-2xl h-fit" radius="lg">
+    <Card className="mx-auto animate-pulse space-y-5 p-4 mt-5 max-w-lg h-fit" radius="lg">
       <div className=" w-full flex items-center gap-3">
         <div>
           <Skeleton className="flex rounded-full w-12 h-12" />

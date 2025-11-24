@@ -16,7 +16,7 @@ export default function AboutUser() {
 
   return (
     <Card className="h-fit p-6 shadow-lg rounded-2xl border border-purple-100 bg-white/90 backdrop-blur-md sticky top-24">
-      <h2 className="text-center text-purple-600 font-semibold text-2xl mb-4">
+      <h2 className="text-center text-purple-600 font-semibold text-xl mb-4">
         About
       </h2>
       <Divider className="mb-4" />

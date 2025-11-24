@@ -70,7 +70,7 @@ const myGroups = [
 export default function Sidebar() {
   return (
     <>
-      <div className="p-4 rounded-full sticky top-20 h-screen hidden lg:block  ">
+      <div className="px-12 sticky top-15 hidden md:block h-screen">
         <div className="flex flex-col gap-1">
           {menuOptions.map((option) => (
             <NavLink
@@ -85,18 +85,18 @@ export default function Sidebar() {
               <div className={`${option.bgColor} p-2 rounded-full `}>
                 {option.icon}
               </div>
-              <span className="font-medium md:text-lg">{option.lable}</span>
+              <span className="font-medium text-sm">{option.lable}</span>
             </NavLink>
           ))}
         </div>
         <div className="mt-4 space-y-4">
-          <h2 className="text-xl font-semibold border-purple-500 pt-4">
+          <h2 className="text-lg font-semibold border-purple-500 pt-4">
             My Groups
           </h2>
           {myGroups.map((group) => (
             <div key={group.groupName} className="flex items-center gap-2 mb-4">
               <img src={group.groupIcon} alt={group.groupName}  className="w-8 h-8 rounded-full"/>
-              <span className="font-medium md:text-lg" >{group.groupName}</span>
+              <span className="font-medium text-sm" >{group.groupName}</span>
             </div>
           ))}
         </div>

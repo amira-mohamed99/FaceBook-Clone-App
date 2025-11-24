@@ -24,26 +24,26 @@ export default function Navbar() {
     setToken(false);
   }
   return (
-    <HeroNavbar isBordered maxWidth="full" className="px-15">
+    <HeroNavbar isBordered maxWidth="full" height="50px" className="px-15">
       <NavbarContent justify="start">
         <Link to={"/home"}>
           <NavbarBrand className="mr-4">
-            <img src={logo} width={35} alt="nexify logo" />
-            <span className="font-bold ms-2 text-2xl ">Nexify</span>
+            <img src={logo} width={30} alt="nexify logo" />
+            <span className="font-bold ms-2 text-xl ">Nexify</span>
           </NavbarBrand>
         </Link>
       </NavbarContent>
       <NavbarBrand>
         <Input
           classNames={{
-            base: "max-w-full h-10",
+            base: "max-w-xl h-8",
             mainWrapper: "h-full",
             input: "text-small",
             inputWrapper:
               "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
           }}
           placeholder="Type to search..."
-          size="md"
+          size="sm"
           type="search"
           radius="full"
         />
@@ -58,7 +58,7 @@ export default function Navbar() {
                 key={userData?.photo}
                 as="button"
                 name={userData.name}
-                size="lg"
+                size="sm"
                 src={userData?.photo}
               />
             )}

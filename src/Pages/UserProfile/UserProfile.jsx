@@ -8,9 +8,9 @@ import Post from "../../Components/Post/Post.jsx";
 import { getAllPosts } from "../../Services/postServices.js";
 
 function UserProfile() {
-  const { isLoading, userData, uploadUserPhoto } = useContext(userContext);
+  const { userData, uploadUserPhoto } = useContext(userContext);
 
-  const { data: allPosts } = useQuery({
+  const { data: allPosts , isLoading} = useQuery({
     queryKey: ["getAllposts"],
     queryFn: getAllPosts,
     select: (data) => data?.data.posts,
@@ -19,15 +19,14 @@ function UserProfile() {
   return (
     <>
     <title>Profile | Social App</title>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-lg md:max-w-4xl container">
         <div className="order-1 col-span-1 md:col-span-3">
           <ProfileHeader
-            isLoading={isLoading}
             userData={userData}
             uploadUserPhoto={uploadUserPhoto}
           />
         </div>
-        <div className="order-3 md:order-2 col-span-1 md:col-span-2">
+        <div className="order-3 md:order-2 col-span-1 md:col-span-2 w-full">
           {isLoading ? (
             [...Array(5)].map((skeleton, index) => <PostSkeleton key={index} />)
           ) : (

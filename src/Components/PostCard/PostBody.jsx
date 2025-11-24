@@ -9,7 +9,7 @@ export default function PostBody({
 }) {
   return (
     <>
-      <div className="px-4 pb-3">
+      <div className="px-4 pb-2">
         <p className="text-gray-800">{body}</p>
       </div>
 
@@ -25,15 +25,15 @@ export default function PostBody({
       </div>
 
       <div className="flex items-center gap-6 px-4 py-3 border-b border-gray-100">
-        <button className="flex items-center gap-2 text-gray-600 hover:text-red-500 transition-colors">
+        <button className="flex items-center gap-1 text-gray-600 hover:text-red-500 transition-colors">
           <AiOutlineHeart className="w-6 h-6" />
           <span className="font-medium">1200</span>
         </button>
-        <button className="flex items-center gap-2 text-gray-600 hover:text-blue-500 transition-colors">
+        <button className="flex items-center gap-1 text-gray-600 hover:text-blue-500 transition-colors">
           <BiMessageRounded className="w-6 h-6" />
           <span className="font-medium">{commentsLength}</span>
         </button>
-        <button className="flex items-center gap-2 text-gray-600 hover:text-green-500 transition-colors">
+        <button className="flex items-center gap-1 text-gray-600 hover:text-green-500 transition-colors">
           <BiShareAlt className="w-6 h-6" />
           <span className="font-medium">17</span>
         </button>

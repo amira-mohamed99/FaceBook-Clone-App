@@ -68,14 +68,6 @@ export default function CommentInput({
     queryFn: () => getPostComments(id),
     onSuccess: (data) => setPostComments([...data.comments]),
   });
-  //     async function getNewComments(postId) {
-  //   try {
-  //     const { data } = await getPostComments(postId);
-  //     setPostComments([...data.comments].reverse());
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
   return (
     <>
       <div className="flex items-center gap-3 p-4 border-b border-gray-100">

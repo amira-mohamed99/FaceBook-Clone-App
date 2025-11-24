@@ -46,9 +46,9 @@ function Register() {
 
   return (
     <>
-    <title>Sign Up | Social App</title>
+    <title>Sign Up | Nexify </title>
       <form
-        className="w-full max-w-4xl space-y-4"
+        className="w-full max-w-2xl space-y-4"
         onSubmit={handleSubmit(onSubmit)}
         noValidate
       >

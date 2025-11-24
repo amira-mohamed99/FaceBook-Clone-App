@@ -43,7 +43,7 @@ function Login() {
     <>
     <title>Sign In | Social App</title>
       <form
-        className="w-full max-w-4xl space-y-4"
+        className="w-full max-w-2xl space-y-4"
         onSubmit={handleSubmit(onSubmit)}
         noValidate
       >

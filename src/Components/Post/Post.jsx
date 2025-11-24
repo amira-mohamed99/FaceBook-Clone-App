@@ -7,7 +7,7 @@ export default function Post({ post, deleteSinglePost }) {
   const [postComments, setPostComments] = useState(post?.comments || []);
   return (
     <>
-      <div className="max-w-2xl bg-white rounded-lg shadow-sm border border-gray-200 mt-3">
+      <div className="max-w-lg bg-white rounded-lg shadow-sm border border-gray-200 mt-3">
         <PostHeader
           photo={post.user.photo}
           name={post.user.name}
@@ -30,7 +30,6 @@ export default function Post({ post, deleteSinglePost }) {
           id={post._id}
           postUserId={post.user._id}
           setPostComments={setPostComments}
-
         />
       </div>
     </>

@@ -45,7 +45,7 @@ export default function NewPostBox() {
 
   return (
     <>
-      <Card className="p-3 max-w-2xl">
+      <Card className="p-3 max-w-lg mt-2 mx-auto">
         {isLoading ? (
           <div className=" w-full flex items-center gap-3">
             <div>
@@ -60,8 +60,8 @@ export default function NewPostBox() {
           <CardHeader className="flex gap-3">
           <Image
             alt={userData.name}
-            height={48}
-            width={54}
+            height={40}
+            width={45}
             radius="full"
             src={userData.photo}
           />
@@ -86,10 +86,10 @@ export default function NewPostBox() {
 
         <Divider />
 
-        <div className="flex justify-between items-center gap-4 cursor-pointer p-5">
+        <div className="flex justify-between items-center gap-4 cursor-pointer p-4">
           {myIcons.map((icon) => (
             <div key={icon.name} className="flex items-center gap-2 ">
-              <span className={`text-2xl ${icon.color}`}>{icon.icon}</span>
+              <span className={`text-xl ${icon.color}`}>{icon.icon}</span>
               <span className="font-medium">{icon.name}</span>
             </div>
           ))}

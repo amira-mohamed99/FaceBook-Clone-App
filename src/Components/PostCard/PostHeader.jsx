@@ -27,11 +27,11 @@ export default function PostHeader({
   return (
     <>
       <div className="flex items-center justify-between p-4">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <img
             src={photo}
             alt={name}
-            className="w-12 h-12 rounded-full object-cover"
+            className="w-10 h-10 rounded-full object-cover"
           />
           <div>
             <h3 className="font-semibold text-gray-900">{name}</h3>

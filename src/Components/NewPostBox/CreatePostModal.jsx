@@ -61,7 +61,7 @@ export default function CreatePostModal({ post, isOpen, onOpenChange }) {
   return (
     <>
       <Modal
-        size="xl"
+        size="lg"
         isOpen={isOpen}
         onOpenChange={() => {
           onOpenChange(false);
@@ -73,7 +73,7 @@ export default function CreatePostModal({ post, isOpen, onOpenChange }) {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex justify-center font-bold text-2xl text-purple-500">
+              <ModalHeader className="flex justify-center font-bold text-xl text-purple-500">
                 {post ? "Update" : "Create"} Post
               </ModalHeader>
               <Divider />
@@ -140,7 +140,7 @@ export default function CreatePostModal({ post, isOpen, onOpenChange }) {
                   color="secondary"
                   isLoading={isLoading}
                   onPress={editPost}
-                  className="text-xl"
+                  className="text-lg"
                 >
                   {post ? "Update" : "Post"}
                 </Button>
